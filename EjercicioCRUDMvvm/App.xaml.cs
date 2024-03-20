@@ -1,4 +1,6 @@
-﻿namespace EjercicioCRUDMvvm
+﻿using EjercicioCRUDMvvm.Views;
+
+namespace EjercicioCRUDMvvm
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new ProductoMainPage());
         }
     }
 }
